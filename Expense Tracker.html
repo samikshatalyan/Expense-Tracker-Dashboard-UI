@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Expense Tracker</title>
+    <style>
+              body{
+                  font-family: Arial, Helvetica, sans-serif;
+                  background-color: beige;
+                  margin: 0;
+                  padding: 30px;
+              }
+              .header{
+                  text-align: center;
+                  margin-bottom: 30px;
+              }
+
+              .summary{
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 30px;
+              }
+              .card{
+                  background: white;
+                  padding: 20px;
+                  width: 30%;
+                  text-align: center;
+                  border-radius: 5px;
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0,1);
+
+              }
+              .dashboard{
+                  display: flex;
+                  gap: 20px;
+              }
+              .card:hover{
+          transform:translateY(-5px);
+      }
+
+      .card h3{
+          margin:0;
+          font-size:16px;
+          color:#888;
+      }
+
+      .card p{
+          font-size:22px;
+          font-weight:600;
+          margin-top:10px;
+      }
+
+      /* Dashboard Layout */
+      .dashboard{
+          display:flex;
+          gap:20px;
+      }
+
+      /* Sections */
+      .categories, .transactions{
+          flex:1;
+          background:white;
+          padding:25px;
+          border-radius:12px;
+          box-shadow:0 5px 20px rgba(0,0,0,0.05);
+      }
+
+      h2{
+          margin-bottom:20px;
+      }
+
+      /* Category Rows */
+      .category{
+          display:flex;
+          justify-content:space-between;
+          padding:12px 0;
+          border-bottom:1px solid #eee;
+      }
+
+      /* Transaction Rows */
+      .transaction{
+          display:flex;
+          justify-content:space-between;
+          padding:12px 0;
+          border-bottom:1px solid #eee;
+      }
+
+      /* Highlight amounts */
+      .category span:last-child,
+      .transaction p:last-child{
+    </style>
+
+  </head>
+  <body>
+    <!--- Header Section-->
+
+    <header>
+      <h1>Track your expenses</h1>
+      <p>track your monthly expenses</p>
+    </header>
+
+    <!--Summary Cards-->
+    <section class="summary">
+      <div class="cards">
+        <h3>Total Spent</h3>
+        <p>Rs.9400/-</p>
+      </div>
+
+      <div class="cards">
+        <h3>Highest Category</h3>
+        <p>Shopping</p>
+      </div>
+
+      <div class="cards">
+        <h3>Current Month</h3>
+        <p>March 26</p>
+      </div>
+    </section>
+
+    <!--Dashboard Section-->
+
+    <section class="dashboard">
+      <!--categories-->
+      <div class="categories">
+        <h2>Expense category</h2>
+
+        <div class="category">
+          <span>Food Items</span>
+          <span>Rs.1050/-</span>
+        </div>
+
+        <div class="category">
+          <span>Fuel</span>
+          <span>Rs.2500/-</span>
+        </div>
+
+        <div class="category">
+          <span>Shopping</span>
+          <span>4000/-</span>
+        </div>
+
+        <div class="category">
+          <span>Stationery</span>
+          <span>Rs.250/-</span>
+        </div>
+
+        <div class="category">
+          <span>Entertainment</span>
+          <span>Rs.1600/-</span>
+        </div>
+      </div>
+
+      <!--Transactions-->
+
+      <div class="transactions">
+        <h2>Recent Transactions</h2>
+
+        <div class="transaction">
+          <p>Netflix Subscription</p>
+          <p>07 March</p>
+          <p>Rs.499/-</p>
+        </div>
+
+        <div class="transaction">
+          <p>Pizza Hut</p>
+          <p>11 March</p>
+          <p>Rs.599/-</p>
+        </div>
+
+        <div class="transaction">
+          <p>Blinkit</p>
+          <p>17 March</p>
+          <p>Rs.756/-</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
